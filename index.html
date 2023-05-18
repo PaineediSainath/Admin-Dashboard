@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--  Font Awesome CSS link or include the CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  Bootstrap CSS link or include the CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--  jQuery JS link or include the JS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--  Bootstrap JS link or include the JS file -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2B2B4B;">
+      <a class="navbar-brand" href="#" 
+        ><i class="fa fa-home"></i></button>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <form class="form-inline">
+              <div class="input-group ">
+                <input
+                  class="form-control mr-sm-3 color" 
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <div class="input-group-append color">
+                  <span class="input-group-text" 
+                    ><i class="fas fa-search" ></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          
+          </li>
+          <span>&nbsp;</span>
+          <div class="circle rounded-circle" >
+            <i class="fas fa-phone-alt rounded-phone-icon"></i>
+          </div>
+          <span>&nbsp;</span>
+          <li class="nav-item">
+            <button class="btn btn-success rounded-pill">
+              <i class="fa fa-plus"></i> New Stack 
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="comment-dots-circle">
+                <i class="fas fa-comment-dots"></i>
+                <span class="dot"></span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><span class="notification-circle">
+                <i class="fas fa-bell"></i>
+                <span class="notification-dot"></span> </span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Side profile -->
+    <div class="row m-4 ">
+        <div class="col-sm-3">
+            <div class="card h-100 w-100  color">
+                <div class="card-body d-flex justify-content-center align-content-center">
+                  <div class="row align-items-center">
+                    <div class="col-3">
+                      <div class="circle-photo">
+                        <img src="./Images/Ellipse 10.jpg" alt="Profile Photo" />
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <h5 class="card-title profile-name">Jakeman Mangkoler &nbsp; <i class="fas fa-chevron-down"></i>
+                      </h5>
+                      <p class="card-text profile-status">online</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- End of side profile -->
+        <!-- CARDS -->
+        <div class="col-sm-9 ">
+            <div class="container container-custom-css">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <div class="card card1">
+                      <div class="card-body ">
+                        <div class="row">
+                          <div class="col-8 row-2 ">
+                            <p class="card-text title-text">To be Fulfilled</p>
+                            <p class="card-text title-count">56</p>
+                            <p class="card-text title-sub">Quality</p>
+                          </div>
+                          <div class="col-2">
+                            <div class="row">
+                              <div class="col rounded-circle-white">
+                                <i class="fas fa-book"></i>
+                              </div>
+                              <div class="col"><br>
+                                <i class="fas fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card2">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-8">
+                            <p class="card-title title-text">To be invoiced</p>
+                            <p class="card-text title-count">24</p>
+                            <p class="card-text title-sub">Quality</p>
+                          </div>
+                          <div class="col-2">
+                            <div class="row">
+                              <div class="col rounded-circle-white">
+                                <i style="color: #0143D5;" class="fas fa-file-invoice"></i>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card3"> 
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-8">
+                            <h5 class="card-title title-text">Completed</h5>
+                            <p class="card-text title-count">12</p>
+                            <p class="card-text title-sub">Quality</p>
+                          </div>
+                          <div class="col-2">
+                            <div class="row">
+                              <div class="col rounded-circle-white">
+                                <i style="color: #03AC48;" class="fas fa-check"></i>
+                              </div>
+                              <div class="col"><br>
+                                <i class="fas fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card4">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-8">
+                            <p class="card-title title-text">Assigned to me</p>
+                            <p class="card-text title-count">3</p>
+                            <p class="card-text title-sub">Quality</p>
+                          </div>
+                          <div class="col-2">
+                            <div class="row">
+                              
+                              <div class="col rounded-circle-white">
+                                <i style="color: #6009CD;" class="fas fa-address-book"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of cards -->
+                </div>
+              </div>
+        </div>
+      </div>
+      <!-- Side Menu Bar -->
+    <div class="row m-4" >
+        <div class="col-sm-3 " style="background: #2B2B4B;">
+            <div class="card color">
+              <div class="d-flex">
+                <div class="sidebar">
+                  <ul class="list-unstyled">
+                    <li class="sidebar-item numcount">
+                      <a href="#">
+                       Task
+                      </a>
+                      <div class="square">
+                        <span class="number">16</span>
+                      </div>
+                    </li>
+                    <div class="underline"></div>
+                    <li class="sidebar-item">
+                      <a href="#">
+                        <i class="fas fa-home"></i> Home
+                      </a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="#">
+                        <i class="fas fa-calendar"></i> Calendar
+                      </a>
+                    </li>
+                    <li class="sidebar-item ">
+                      <a href="#">
+                        <i class="fas fa-envelope"></i> Messages
+                      </a> 
+                     
+                    </li>
+                    <li class="sidebar-item">
+                      <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                      
+                      
+                      <td><span class="dot-icon" onclick="toggleProjects()"><i class="fas fa-folder"></i>projects <i class="fas fa-chevron-down " ></i></span><div class="menu" id="menuContainer1">
+                        <h3>Google</h3>
+                        <h3>Amazon</h3>
+                        <h3>Facebook</h3>
+                        <h3>Airbnb</h3>
+                      </div></td> </a>
+                    </li>
+                    
+                    <li class="sidebar-item">
+                      <a href="#">
+                        <i class="fas fa-chart-bar"></i> Progress
+                      </a>
+                    </li>
+                    
+                    <li class="sidebar-item">
+                      <a href="#">
+                        <i class="fas fa-bullseye"></i> Goals
+                        
+                      </a>
+                    </li>
+                    
+                    <li class="sidebar-item">
+                      <a href="#">
+                        <i class="fas fa-cog"></i> Settings
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+        </div>
+        <!-- GRAPHS -->
+        <div class="col-sm-9" >
+            <div class="container">
+              <div class="row" >
+                <div class="col-md-3" style="background-color:#2b2b4b;">
+                  <!-- Statistics Graph -->
+                  <div class="chart-container" >
+                    <div class="chart-title">Statistics</div>
+                    <canvas id="polarChart"></canvas>
+              
+                    <div class="legend-container">
+                      <span
+                        class="legend-color"
+                        style="background-color: rgb(106, 90, 205)"
+                      ></span>
+                      <span class="legend-label">cat#1</span>
+              
+                      <span
+                        class="legend-color"
+                        style="background-color: rgb(255, 69, 0)"
+                      ></span>
+                      <span class="legend-label">cat#2</span>
+              
+                      <span
+                        class="legend-color"
+                        style="background-color: rgb(205, 27, 205)"
+                      ></span>
+                      <span class="legend-label">cat#3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <!-- Total Visits Graph -->
+                  <div class="container" style="background-color: #2b2b4b ;" >
+                    <div class="row"  >
+                      <div class="col" style="margin-top: 10px; ">
+                        <span style="color: white"> Total Visits </span>
+                        <i class="fas fa-circle-exclamation" style="color: gray"> </i>
+                      </div>
+                      <div class="col d-flex justify-content-end" >
+                        <div class="row" style="margin-top: 10px">
+                          <div class="col" style="color: gray">Provisions Month</div>
+              
+                          <div class="col-auto">
+                            <input
+                              type="month"
+                              id="monthPicker"
+                              name="monthPicker"
+                              class="row justify-content-end"
+                              style="width: 130px; color: white; background-color: #2b2b4b"
+                            />
+                          </div>
+                          <div class="col-auto">
+                            <i
+                              class="fa-solid fa-ellipsis d-flex align-items-center justify-content-center"
+                              style="
+                                border: solid gray;
+                                width: 30px;
+                                height: 30px;
+                                color: white;
+                                border-radius: 3px;
+                                color: #5e5ce6;
+                              "
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col" >
+                          <canvas style="width: 100%;" id="lineChart"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  
+                
+              
+       
+      <div class="row">
+        <div class="col">
+      <div class="table-container ">
+      <table class="table table-dark mt-4">
+        <thead>
+            
+          <tr>
+            <th scope="row" ><i class="far fa-square"></i></th>
+            <th scope="col">Company </i><br> Search</th>
+            <th scope="col">Status <i class="fas fa-sort sort-icon"></i><br>All <i class="fas fa-caret-down dropdown-icon"></i></th>
+            <th scope="col">Type <i class="fas fa-sort sort-icon"></i><br>All <i class="fas fa-caret-down dropdown-icon"></i></th>
+            <th scope="col">SKU<br>Search</th>
+            <th scope="col">Contact<br>Search</th>
+            <th scope="col">Price USD <i class="fas fa-sort sort-icon"></i><br>All <i class="fas fa-caret-down dropdown-icon"></i></th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <th scope="row"><i class="far fa-square"></i></th>
+            <td >
+                <img src="./Images/Company search images/louis.jpg" >
+               Louis Vuitton
+            </td>
+            <td><div class="status1 button-custom-css" style=" background: #7fc008;
+                border: 1px solid #7fc008;">Active</div></td>
+            <td>Bravo</td>
+            <td><div class="number-box">9177</div></td>
+            <td> 
+              <img src="./Images/Contact search images/Evan.jpg" class="table-contact-img" >
+              Evan Flores</td>
+            <td>$452.85</td>
+            <td><span class="dot-icon" onclick="toggleMenu()">&#8226;&#8226;&#8226;</span><div class="menu" id="menuContainer">
+                <h3>view</h3>
+                <h3>status</h3>
+                <h3>print</h3>
+              </div></td>         
+            </tr>
+
+
+          <tr>
+            <th scope="row" ><i class="far fa-square"></i></th>
+            <td> 
+                <img src="./Images/Company search images/jhonson.jpg" >
+
+                Johnson & Johnson</td>
+                <td><div class="status button-custom-css" style="background: #DB303F; 
+                border: 1px solid #DB303F;">Danger</div></td>
+                <td>Aifa</td>
+            <td><div class="number-box">3064</div></td>
+            <td>
+              <img src="./Images/Contact search images/Arlene.jpg" class="table-contact-img" > 
+              Arlene Wilson</td>
+            <td>$901.31</td>
+            <td><span class="dot-icon" onclick="toggleMenu()">&#8226;&#8226;&#8226;</span><div class="menu" id="menuContainer">
+                <h3>view</h3>
+                <h3>status</h3>
+                <h3>print</h3>
+              </div></td>        
+          </tr>
+
+
+
+          <tr>
+            <th scope="row"><i class="far fa-square"></i></th>
+            <td> 
+                <img src="./Images/Company search images/starbucks.jpg" >
+
+                Starbucks</td>
+                <td><div class="status2 button-custom-css" style="background: #DB8C28;
+                    border: 1px solid #DB8C28;">Pending</div></td>
+            <td>Bravo</td>
+            <td><div class="number-box">9195</div></td>
+            <td>
+              <img src="./Images/Contact search images/Jennie.jpg" class="table-contact-img" > 
+              Jennie Cooper</td>
+            <td>$552.85</td>
+            <td><span class="dot-icon" onclick="toggleMenu()">&#8226;&#8226;&#8226;</span><div class="menu" id="menuContainer">
+                <h3>view</h3>
+                <h3>status</h3>
+                <h3>print</h3>
+              </div></td> 
+          </tr>
+
+
+          <tr>
+            <th scope="row"><i class="far fa-square"></i></th>
+            <td >
+                <img src="./Images/Company search images/Walt.jpg" >
+               The Walt Disney
+            </td>
+            <td><div class="status button-custom-css" style="background: #DB303F;
+                border: 1px solid #DB303F;">Danger</div></td>
+            <td>Alfa</td>
+            <td><div class="number-box">3128</div></td>
+            <td> 
+              <img src="./Images/Contact search images/Philip.jpg" class="table-contact-img" >
+              Philip Steward</td>
+            <td>$434.82</td>
+            <td><span class="dot-icon" onclick="toggleMenu()">&#8226;&#8226;&#8226;</span><div class="menu" id="menuContainer">
+                <h3>view</h3>
+                <h3>status</h3>
+                <h3>print</h3>
+              </div></td>       
+             </tr>
+
+          </tbody>
+      </table>
+      <div class="d-flex justify-content-between footer-text">
+        <div>Active Customers: 479/706</div>
+        <div class="ms-2 d-flex">
+          <div class="me-2">Rows Per Page: 10 <i class="fas fa-caret-down dropdown-icon"></i></div>
+          <div class="me-2">1-10 of 708</div>
+          <div>
+              <i class="fas fa-chevron-left"></i>
+              <span>&nbsp;&nbsp;</span>
+              <i class="fas fa-chevron-right"></i>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+    </div>
+  </div>
+    </div>
+      </div>
+      </div>
+    </div>
+    </div>
+      
+      
+    <!-- <script src="index.js"></script> -->
+    <script>
+      // Sample data for the polar area chart
+      var data = {
+        datasets: [
+          {
+            data: [150, 180, 130, 100],
+            backgroundColor: [
+              "rgb(205, 27, 205)", //purple
+
+              "rgb(255, 69, 0)", //green
+              "rgb(106, 90, 205)", //blue
+              "rgb(0, 255, 0)", //orange
+            ],
+            label: "Polar Area Chart",
+          },
+        ],
+      };
+
+      // Configuration options for the polar area chart
+      var options = {
+        responsive: true,
+        tooltips: {
+          //   enabled: false,
+        },
+        scale: {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        },
+      };
+
+      // Create the polar area chart
+      var ctx = document.getElementById("polarChart").getContext("2d");
+      var polarChart = new Chart(ctx, {
+        type: "polarArea",
+        data: data,
+        options: {
+          // plugins: [ChartDataLabels],
+          scales: {
+            r: {
+              beginAtZero: true,
+              grid: {
+                display: false,
+              },
+            },
+          },
+        },
+      });
+    </script>
+    
+    <script>
+      // scripts for Total visits Graph
+      
+      function createLineChart() {
+        var ctx = document.getElementById("lineChart").getContext("2d");
+        var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, "rgba(253, 121, 179, 1)"); // Start color
+        gradient.addColorStop(1, "rgba(253, 189, 119, 0)"); // End color
+
+        var salesGradient = ctx.createLinearGradient(0, 0, 0, 400);
+        salesGradient.addColorStop(0, "rgba(132, 64, 238, 0.66)"); // Start color
+        salesGradient.addColorStop(1, "rgba(253, 116, 155, 0.36)"); // End color
+
+        var myChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: [
+              "2020",
+              "2019",
+              "2018",
+              "2017",
+              "2016",
+              "2015",
+              "2014",
+              "2013",
+            ],
+            datasets: [
+              {
+                label: "Sales",
+                data: [0, 170, 350, 100, 250, 500, 150, 200],
+                fill: true,
+                borderColor: "rgba(75, 192, 192, 1)",
+                backgroundColor: salesGradient,
+                lineTension: 0.6, // Adjust the lineTension value to control the curve
+              },
+              {
+                label: "This month",
+                data: [0, 100, 330, 130, 600, 130, 100, 250],
+                fill: true,
+                borderColor: "rgba(0,0,0,0)",
+                backgroundColor: gradient,
+
+                lineTension: 0.4, // Adjust the lineTension value to control the curve
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+                grid: {
+                  display: false,
+                  // Hide the background grid lines on the y-axis
+                },
+              },
+              x: {
+                grid: {
+                  borderDash: [5, 5],
+                  color: "white", // Apply dashed line to the x-axis grid
+                },
+              },
+            },
+            plugins: {
+              legend: {
+                display: true,
+              },
+            },
+          },
+        });
+      }
+
+      createLineChart();
+    </script>
+    <script>
+      // js script for toggle of table dots
+      function toggleMenu() {
+      var menuContainer = document.getElementById('menuContainer');
+      menuContainer.style.display = menuContainer.style.display === 'none' ? 'block' : 'none';
+    }
+    </script>
+     <script>
+      // js script for toggle of projects dropdown
+      function toggleProjects() {
+      var projectsdrop = document.getElementById('menuContainer1');
+      projectsdrop.style.display = projectsdrop.style.display === 'none' ? 'block' : 'none';
+    }
+    </script>
+    
+
+  </body>
+</html>
